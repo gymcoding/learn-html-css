@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Style 1</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+      /* * {
+        margin: 0px;
+        padding: 0px;
+      } */
+      html {
+        /* font-family: serif, monospace; */
+        font-family: 'Nanum Gothic', sans-serif;
+        font-size: 16px;
+      }
+      .title {
+        font-size: 28px;
+        color: #6c34c77c;
+      }
+      .content {
+        font-size: 18px;
+      }
+      .font-italic {
+        font-style: italic;
+      }
+      .font-weight-bold {
+        font-weight: bold;
+      }
+      .font-weight-300 {
+        font-weight: 300;
+      }
+      .font-variant {
+        font-variant: small-caps;
+      }
+      .subtitle {
+        font-size: 20px;
+      }
+      .subtitle-rem {
+        font-size: 2rem;
+      }
+      .subtitle-em {
+        font-size: 2em;
+      }
+      .article {
+        font-size: 10px;
+      }
+      .rectangle.width {
+        width: 20vw;
+        height: 100px;
+        background-color: #abab19;
+      }
+      .rectangle.height {
+        height: 20vh;
+        width: 100px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="title">유튜브 짐코딩 채널</h2>
+    <p class="content">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <p class="content font-italic">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <p class="content font-weight-bold">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <p class="content font-weight-300">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <p class="content font-variant">HELLO, gymcoding</p>
+    <hr />
+    <h2>px</h2>
+    <p class="subtitle">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <h2>rem</h2>
+    <p class="subtitle-rem">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    <h2>em</h2>
+    <div class="article">
+      <p class="subtitle-em">실용적인 코딩 컨텐츠를 만들어가는 짐코딩입니다.</p>
+    </div>
+    <hr />
+    <!-- Viewport width -->
+    <h2>vw</h2>
+    <div class="rectangle width"></div>
+    <!-- Viewport Height -->
+    <h2>vh</h2>
+    <div class="rectangle height"></div>
+  </body>
+</html>
