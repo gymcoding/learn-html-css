@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+    <style>
+      /*
+      Content, Padding, Margin, Border
+      */
+      div.content {
+        background-color: rgb(208, 208, 208);
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 10px solid green;
+        margin: 40px;
+      }
+      span {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      div.padding {
+        border: 1px solid black;
+        padding: 20px 10px;
+      }
+      div.margin {
+        border: 1px solid red;
+        margin-left: 20px;
+      }
+      .shape {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <span>Hello CSS</span>
+    <div class="padding">
+      반쯤 볶아진 김치에 밥을 비롯한 기타 재료들을 투입하고[5] 수저나 주걱으로 밥알을 흩어주듯이 풀며, 적당히 섞일 때까지 볶는다. 포인트는 들어간 김치국물을 증발시켜, 밥을 넣었을 때 질척하지 않게 하는
+      것이다. 밥 외의 다른 재료들은 익는 데 걸리는 시간 정도를 감안해서 집어넣는 것이 좋다. 일단 김치를 밥과 대략 1:1 정도의 비율로 넣어주면 먹을 만한데, 사실 김치죽이 되는 꼴만 아니면 대부분 먹을 수
+      있다. 귀찮음과 빈곤의 신이 강림한 당신이라면 김치와 밥만 가지고 볶아보자. 김치가 들어가고 밥을 볶았으니 일단은 김치볶음밥이 맞다.
+    </div>
+    <div class="margin">
+      반쯤 볶아진 김치에 밥을 비롯한 기타 재료들을 투입하고[5] 수저나 주걱으로 밥알을 흩어주듯이 풀며, 적당히 섞일 때까지 볶는다. 포인트는 들어간 김치국물을 증발시켜, 밥을 넣었을 때 질척하지 않게 하는
+      것이다. 밥 외의 다른 재료들은 익는 데 걸리는 시간 정도를 감안해서 집어넣는 것이 좋다. 일단 김치를 밥과 대략 1:1 정도의 비율로 넣어주면 먹을 만한데, 사실 김치죽이 되는 꼴만 아니면 대부분 먹을 수
+      있다. 귀찮음과 빈곤의 신이 강림한 당신이라면 김치와 밥만 가지고 볶아보자. 김치가 들어가고 밥을 볶았으니 일단은 김치볶음밥이 맞다.
+    </div>
+    <div class="shape" style="margin-bottom: 40px"></div>
+    <div class="shape"></div>
+  </body>
+</html>
