@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Combination</title>
+    <style>
+      /* 자손 결합자 */
+      /* section li {
+        color: blue;
+      }
+      section span {
+        color: red;
+      } */
+
+      /* 자식 결합자 */
+      section > ul > li {
+        color: blue;
+      }
+
+      /* 일반 형제 결합자 */
+      p ~ span {
+        color: red;
+      }
+
+      /* 인접 형제 결합자 */
+      p + code {
+        font-size: 30px;
+      }
+      .first + li {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>헬스</h1>
+      <hr />
+      <p>위키백과, 우리 모두의 백과사전.</p>
+      <p>헬스(health)는 기본적으로 건강을 가리키며 그 외에 다음을 가리킨다.</p>
+      <ul>
+        <li>의료</li>
+        <li>보건</li>
+        <li>체렴(게이밍)</li>
+        <li>패션 헬스(Fashion health)</li>
+        <li>헬스클럽(health club)</li>
+        <li>구글 헬스: <span>구글</span>이 제공하는 개인 의료 정보 서비스</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section>
+      <span>이건 빨강이 아닙니다.</span>
+      <p>여기 문단이 있습니다.</p>
+      <code>여긴 코드가 있는 곳이에요.</code>
+      <span>이제 빨강입니다.</span>
+      <code>코드가 있어요</code>
+      <span>이것도 빨강입니다.</span>
+    </section>
+    <hr />
+    <ul>
+      <li class="first">one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+  </body>
+</html>
