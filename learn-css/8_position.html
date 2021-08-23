@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      body {
+        margin: 0px;
+        pading: 0px;
+      }
+      main,
+      section,
+      article,
+      div {
+        border: 1px solid black;
+        padding: 20px;
+      }
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: yellow;
+      }
+      section {
+        background-color: violet;
+        position: relative;
+      }
+      article {
+        background-color: cyan;
+      }
+      div {
+        background-color: white;
+      }
+      div.relative {
+        position: relative;
+        right: 20px;
+      }
+      div.absolute {
+        position: absolute;
+        background-color: grey;
+        top: 0px;
+        left: 0px;
+      }
+      div.fixed {
+        position: fixed;
+        background-color: blue;
+        bottom: 30px;
+        right: 30px;
+        border-radius: 50%;
+      }
+      div.sticky {
+        position: sticky;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      main
+      <section>
+        section
+        <article>
+          article
+          <div>static</div>
+          <div class="relative">relative</div>
+          <div class="absolute">absolute</div>
+          <div class="fixed">fixed</div>
+          <div class="sticky">sticky</div>
+          <div style="height: 1000px"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
