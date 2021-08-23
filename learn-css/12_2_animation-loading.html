@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation Loading</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        background-color: blue;
+        border-radius: 50%;
+        position: absolute;
+        animation: move-the-circle 1.5s infinite;
+      }
+
+      .circle:nth-child(2) {
+        left: 30px;
+        animation-delay: 0.1s;
+      }
+      .circle:nth-child(3) {
+        left: 60px;
+        animation-delay: 0.2s;
+      }
+      .circle:nth-child(4) {
+        left: 90px;
+        animation-delay: 0.3s;
+      }
+      .circle:nth-child(5) {
+        left: 120px;
+        animation-delay: 0.4s;
+      }
+      .circle:nth-child(6) {
+        left: 150px;
+        animation-delay: 0.5s;
+      }
+      .circle:nth-child(7) {
+        left: 180px;
+        animation-delay: 0.6s;
+      }
+      .circle:nth-child(8) {
+        left: 210px;
+        animation-delay: 0.7s;
+      }
+
+      @keyframes move-the-circle {
+        0% {
+          transform: translate(0, 0) scale(1);
+          background-color: blue;
+        }
+        50% {
+          transform: translate(0, 50px) scale(0.5);
+          background-color: red;
+        }
+        100% {
+          transform: translate(0, 0) scale(1);
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation-wrapper">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
