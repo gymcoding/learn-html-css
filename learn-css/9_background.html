@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backgound</title>
+    <style>
+      .red {
+        background-color: #ff0000c9;
+        width: 120px;
+        height: 120px;
+      }
+      .image {
+        background-image: url('../assets/images/floral.jpg');
+        background-repeat: repeat;
+        background-position: top right;
+        width: 200px;
+        height: 400px;
+        border: 1px solid black;
+        display: inline-block;
+        overflow-y: scroll;
+      }
+      .attachment-scroll {
+        background-attachment: scroll;
+      }
+      .attachment-fixed {
+        background-attachment: fixed;
+      }
+      .attachment-local {
+        background-attachment: local;
+      }
+      .background-size {
+        width: 300px;
+        height: 300px;
+        background-image: url('../assets/images/football.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+      }
+      .linear-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid red;
+        background: linear-gradient(to right, red 50%, blue 80%, yellow 100%);
+      }
+      .radial-gradient {
+        width: 500px;
+        height: 200px;
+        border: 1px solid blue;
+        background: radial-gradient(circle at 10% 50%, white, yellow, red, blue);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>background-color</h3>
+    <div class="red"></div>
+
+    <h3>background-image</h3>
+    <div class="image attachment-scroll">
+      <h4>scroll</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum voluptatum sapiente odio est accusantium illo, fugit nulla velit similique. Incidunt magnam ipsa exercitationem eligendi
+      amet. Accusantium voluptas natus tenetur. Corporis sapiente nam repudiandae eligendi accusamus nostrum nisi exercitationem obcaecati? Dicta voluptate ullam unde iste tempora officia explicabo
+      eos cumque aliquam, totam dolores nihil corrupti minima eveniet quidem ratione nemo! Aut iure reiciendis sed eligendi, animi asperiores incidunt nihil quas vero minus aliquid iste nemo
+      recusandae quam excepturi possimus tenetur officiis, ullam tempore magni? Aliquam minima ullam repudiandae porro molestias. Architecto repellendus minus reprehenderit. Odio corrupti ipsam
+      assumenda mollitia ad sapiente non recusandae quo culpa nulla quis eligendi esse vel sequi quibusdam tempora, minima soluta neque deserunt incidunt maiores fugiat. Maxime, minus, illo rerum
+      distinctio vitae perferendis, aliquid enim laudantium atque libero voluptas dolorum amet deserunt quis ipsum dolore similique. Similique, consequuntur commodi hic possimus officiis qui
+      distinctio temporibus porro! Dolorem voluptatibus accusantium sunt dolore ipsum eius odit libero consequatur, reprehenderit praesentium incidunt expedita aut, quam necessitatibus, mollitia
+      tenetur alias placeat repellat dolores natus dolor quidem. Laboriosam mollitia accusantium ratione. Illo nemo maxime, minus, consectetur qui, neque pariatur illum incidunt sit ipsam alias ab
+      omnis laboriosam culpa tenetur odio nihil dolor voluptatem dignissimos accusamus ratione quibusdam cupiditate aliquam iste. Maiores? Quo deleniti dolores porro magnam ipsa dignissimos sint quis
+      similique aspernatur architecto libero repellendus ratione culpa tempore est autem, a corrupti blanditiis praesentium amet. Voluptatibus, cumque. Tempora quod ut id!
+    </div>
+    <div class="image attachment-fixed">
+      <h4>fixed</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum voluptatum sapiente odio est accusantium illo, fugit nulla velit similique. Incidunt magnam ipsa exercitationem eligendi
+      amet. Accusantium voluptas natus tenetur. Corporis sapiente nam repudiandae eligendi accusamus nostrum nisi exercitationem obcaecati? Dicta voluptate ullam unde iste tempora officia explicabo
+      eos cumque aliquam, totam dolores nihil corrupti minima eveniet quidem ratione nemo! Aut iure reiciendis sed eligendi, animi asperiores incidunt nihil quas vero minus aliquid iste nemo
+      recusandae quam excepturi possimus tenetur officiis, ullam tempore magni? Aliquam minima ullam repudiandae porro molestias. Architecto repellendus minus reprehenderit. Odio corrupti ipsam
+      assumenda mollitia ad sapiente non recusandae quo culpa nulla quis eligendi esse vel sequi quibusdam tempora, minima soluta neque deserunt incidunt maiores fugiat. Maxime, minus, illo rerum
+      distinctio vitae perferendis, aliquid enim laudantium atque libero voluptas dolorum amet deserunt quis ipsum dolore similique. Similique, consequuntur commodi hic possimus officiis qui
+      distinctio temporibus porro! Dolorem voluptatibus accusantium sunt dolore ipsum eius odit libero consequatur, reprehenderit praesentium incidunt expedita aut, quam necessitatibus, mollitia
+      tenetur alias placeat repellat dolores natus dolor quidem. Laboriosam mollitia accusantium ratione. Illo nemo maxime, minus, consectetur qui, neque pariatur illum incidunt sit ipsam alias ab
+      omnis laboriosam culpa tenetur odio nihil dolor voluptatem dignissimos accusamus ratione quibusdam cupiditate aliquam iste. Maiores? Quo deleniti dolores porro magnam ipsa dignissimos sint quis
+      similique aspernatur architecto libero repellendus ratione culpa tempore est autem, a corrupti blanditiis praesentium amet. Voluptatibus, cumque. Tempora quod ut id!
+    </div>
+    <div class="image attachment-local">
+      <h4>local</h4>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate harum voluptatum sapiente odio est accusantium illo, fugit nulla velit similique. Incidunt magnam ipsa exercitationem eligendi
+      amet. Accusantium voluptas natus tenetur. Corporis sapiente nam repudiandae eligendi accusamus nostrum nisi exercitationem obcaecati? Dicta voluptate ullam unde iste tempora officia explicabo
+      eos cumque aliquam, totam dolores nihil corrupti minima eveniet quidem ratione nemo! Aut iure reiciendis sed eligendi, animi asperiores incidunt nihil quas vero minus aliquid iste nemo
+      recusandae quam excepturi possimus tenetur officiis, ullam tempore magni? Aliquam minima ullam repudiandae porro molestias. Architecto repellendus minus reprehenderit. Odio corrupti ipsam
+      assumenda mollitia ad sapiente non recusandae quo culpa nulla quis eligendi esse vel sequi quibusdam tempora, minima soluta neque deserunt incidunt maiores fugiat. Maxime, minus, illo rerum
+      distinctio vitae perferendis, aliquid enim laudantium atque libero voluptas dolorum amet deserunt quis ipsum dolore similique. Similique, consequuntur commodi hic possimus officiis qui
+      distinctio temporibus porro! Dolorem voluptatibus accusantium sunt dolore ipsum eius odit libero consequatur, reprehenderit praesentium incidunt expedita aut, quam necessitatibus, mollitia
+      tenetur alias placeat repellat dolores natus dolor quidem. Laboriosam mollitia accusantium ratione. Illo nemo maxime, minus, consectetur qui, neque pariatur illum incidunt sit ipsam alias ab
+      omnis laboriosam culpa tenetur odio nihil dolor voluptatem dignissimos accusamus ratione quibusdam cupiditate aliquam iste. Maiores? Quo deleniti dolores porro magnam ipsa dignissimos sint quis
+      similique aspernatur architecto libero repellendus ratione culpa tempore est autem, a corrupti blanditiis praesentium amet. Voluptatibus, cumque. Tempora quod ut id!
+    </div>
+    <h3>background-size</h3>
+    <div class="background-size"></div>
+    <h3>linear-gradient</h3>
+    <div class="linear-gradient"></div>
+    <h3>radial-gradient</h3>
+    <div class="radial-gradient"></div>
+    <div style="height: 1000px; width: 10px; background-color: red"></div>
+  </body>
+</html>
